@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "adssm"
+version = 'v0.0.1'
+description = ""
+authors = ["Skrob Mikhail <skrobmv@mail.ru>"]
+
+packages = [
+    { include = 'TODO' }
+]
+
+exclude = [
+    { exlude = 'TODO' }
+]
+
+[tool.poetry.dependencies]
+python = "3.10.11"
+numpy = "^1.23.2"
+poliastro = "^0.17.0"
+astropy = "^5.3.4"
+matplotlib = "3.7.0"
+scipy = "^1.11.4"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[tool.poetry.dev-dependencies]
+wemake-python-styleguide = "^0.16.1"
+flake8-junit-report = "^2.1.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry>=1.2.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.masonry.api"
